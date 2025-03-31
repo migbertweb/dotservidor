@@ -81,10 +81,12 @@ else
 fi
 
 # Prompt con: user@host, path, git, estado, y privilegios
-PS1="\n${PS1_HOST_COLOR}\u@\h\[\033[0m\]:\[\033[1;34m\]\w\[\033[33m\]\$(parse_git_branch)\n\
-\[\033[1;31m\]\${?#0}\[\033[0m\]-\
-[\$(if [[ \$(id -u) -eq 0 ]]; then echo '\[\033[1;31m\]ROOT\[\033[0m\]'; else echo '\[\033[1;32m\]USER\[\033[0m\]'; fi)]\
-${PS1_SUDO_ICON} \$ "
+#PS1="\n${PS1_HOST_COLOR}\u@\h\[\033[0m\]:\[\033[1;34m\]\w\[\033[33m\]\$(parse_git_branch)\n\
+#\[\033[1;31m\]\${?#0}\[\033[0m\]-\
+#[\$(if [[ \$(id -u) -eq 0 ]]; then echo '\[\033[1;31m\]ROOT\[\033[0m\]'; else echo '\[\033[1;32m\]USER\[\033[0m\]'; fi)]\
+#${PS1_SUDO_ICON} \$ "
+
+PS1="${PS1_HOST_COLOR}\h\[\033[0m\] \[\033[1;32m\][\u]\[\033[0m\]${PS1_SUDO_ICON} ➜ \[\033[1;34m\]\w\[\033[33m\]\$(parse_git_branch) \[\033[1;31m\]\${?#0}\[\033[0m\]\$ "
 
 # --- Integración con herramientas ---
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
