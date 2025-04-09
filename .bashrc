@@ -113,8 +113,8 @@ if command -v fzf &>/dev/null; then
 fi
 
 # --- Mensaje inicial ---
-clear
-echo -e "\e[1;34m=== Terminal Configurada ===\e[0m"
-echo -e "Usuario: \e[32m$(whoami)\e[0m"
-echo -e "Host: \e[32m$(hostname)\e[0m"
-echo -e "Sesión SSH: \e[33m$([ -n "$SSH_CLIENT" ] && echo "ACTIVA" || echo "local")\e[0m"
+#clear
+#echo -e "\e[1;34m=== Terminal Configurada ===\e[0m"
+#echo -e "Usuario: \e[32m$(whoami)\e[0m"
+#echo -e "Host: \e[32m$(hostname)\e[0m"
+#echo -e "Sesión SSH: \e[33m$([ -n "$SSH_CLIENT" ] && echo "ACTIVA" || echo "local")\e[0m"
