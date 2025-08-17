@@ -2,4 +2,4 @@ primer comentario
 segundo comentario
 otro comentario
 probando n8n
-funciono
+no lo habia activado funciono
